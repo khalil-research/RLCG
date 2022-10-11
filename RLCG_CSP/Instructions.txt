@@ -1,0 +1,17 @@
+
+ReadMe:
+
+First, specify hyperparameters in Parameters.py
+
+To train the model: 
+Run python main.py 
+Every 80 episodes, model weights and training data are stored in the checkpoints folder
+After all the training is done, the model is stored in save_model folder
+
+To test the model:
+Run python main.py, but change TRAIN = false and TEST = TRUE
+general_compare(DQN_test,0,50):
+	the first number is to specify which trained model to test with index (e.g. model_0)
+	the second number specifies which size of testing instances to use.
+
+Currently, model 0 - 10  are stored in save_model folder
