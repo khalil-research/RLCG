@@ -42,7 +42,6 @@ class DQNAgent(Agent):
     def _update_target_Q(self):
        
         '''
-        try to change 
         '''
         self.target_Q.set_weights(deepcopy(self.behavior_Q.variables))
         # self.target_Q = self.behavior_Q.clone()
